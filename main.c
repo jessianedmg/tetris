@@ -54,10 +54,12 @@ int main(){
         if(keypressed==ARROWS) keypressed = getch();
 
         switch(keypressed){
-            case TECLA_A:
+            case (int)'a':
+            case (int)'A':
             case LEFT: 
                 if(posJ > 0) posJ--; //vai para esquerda
             break; 
+            case TECLA_d:
             case TECLA_D:
             case RIGHT: 
                 if(posJ < (COLUMNS-1)) posJ++; //vai para a direita 
