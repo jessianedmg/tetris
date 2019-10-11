@@ -24,11 +24,12 @@
 #define TECLA_d 100
 #define TECLA_A 65
 #define TECLA_D 68
+#define TECLA_ESPACO 32
 
 //Criando as orientações para as peças
 #define ORIENTACAO_UP 1
-#define ORIENTACAO_DOWN 2
-#define ORIENTACAO_LEFT 3
+#define ORIENTACAO_LEFT 2
+#define ORIENTACAO_DOWN 3
 #define ORIENTACAO_RIGHT 4
 //Criando os tipos de peças
 #define TIPO_L 1
@@ -63,3 +64,8 @@ void init(char matrix[ROWS][COLUMNS]);
     do computador.
 */
 void printMatrix(char matrix[ROWS][COLUMNS]);
+
+/*
+    Desenhar uma barra usando o símbolo do caracter ASCII passado por parametro
+*/
+void drawBar(char matrix [ROWS][COLUMNS], Bloco barra, int simbolo);
