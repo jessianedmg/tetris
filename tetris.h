@@ -2,7 +2,7 @@
     Jogo interativo Tetris implementado em linguagem C para uso 
     no console (terminal de comandos)
 
-    Autor: Augusto Luengo Pereira Nunes
+    Autor: Jessiane Domingues
     Data: 28/08/2019
 
 */
@@ -69,3 +69,5 @@ void printMatrix(char matrix[ROWS][COLUMNS]);
     Desenhar uma barra usando o símbolo do caracter ASCII passado por parametro
 */
 void drawBar(char matrix [ROWS][COLUMNS], Bloco barra, int simbolo);
+
+void initBar(Bloco barra);
